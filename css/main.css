@@ -33,6 +33,7 @@ header.container {
 nav {
     display: flex;
     gap: 20px; 
+    text-transform: uppercase;
 }
 
 nav > a {
@@ -55,7 +56,125 @@ nav > a.active {
     padding: 10px;
 }
 
+
+/********************/
+/*     CONTENT      */
+/********************/
 main.container {
     height: calc(100vh - 120px);
-    background-color: yellow;
+    position: relative;
+    background-image: url(../img/shoes-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+
+
+/*     ABOUT      */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: 200px;
+    width: 40%;
+    max-width: 500px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 40px);
+    text-replace: translateY(-50%);
+    
+}
+.about > h1 {
+    font-size: 60px;
+    color: red;
+}
+.about > p{
+    color: #555;
+    font-size: 25px;
+}
+.about > .price {
+    font-size: 28px;
+}
+.about > a {
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.about > a > span {
+   
+    padding: 10px 30px;
+    
+    text-transform: uppercase;
+    background-color: red;
+    
+}
+.about > a > .fa {
+    padding: 10px 15px;
+    background-color: #111;
+    
+}
+
+/*     NUMBER      */
+.number {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 150px;
+    color: #f002;
+
+}
+
+/*     SOCIALS      */
+.socials {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.socials > .fa{
+    color: #555;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 27px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 2px solid #555;
+    gap: 15px;
+}
+
+/*     Pagination   */
+.pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+}
+.pagination > .top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.pagination > .bar {
+    display: inline-block;
+    width: 100%;
+    height: 5px;
+    background-color: #f008;
+    
+} 
+
+.pagination > .bar > .value {
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    background-color: #f00;
+
+
 }
